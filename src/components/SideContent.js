@@ -19,7 +19,7 @@ export class SideContent extends Component {
             if (this.state.seconds === 59)
             {
                 this.setState({
-                    minuets:this.state.minutes + 1,
+                    minutes:this.state.minutes + 1,
                     seconds:0
                 });
             }
