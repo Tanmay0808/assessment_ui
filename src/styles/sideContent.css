@@ -1,0 +1,102 @@
+/* Sidebar Header */
+.sidebarNav{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 12px 0px;
+}
+
+/* Sidebar Content */
+.sidebar-content{
+    background-color: white;
+    position: fixed;
+    height: 100%;
+    min-height: fit-content;
+    padding-bottom: 50px;
+    width: 380px;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    border-left: 1px solid lightgrey;
+}
+
+/* Results Section */
+.initial-section{
+    height: 90vh;
+    margin-bottom: 50px;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+    overflow-y: scroll;
+    align-items: center;
+    margin-left: 0px;
+}
+
+/* Question Section */
+.questions{
+    margin-top: 60px;
+}
+
+.question-numbers{
+    margin: 10px;
+    width: 45px;
+    height: 35px;
+    border-radius: 7px;
+    border: none;
+    box-shadow: 0 2px 7px grey;
+    cursor: pointer;
+}
+
+/* Results Filter Options */
+.result-filter{
+    margin-top: 40px;
+}
+
+.result-filter label{
+    margin: 0px 15px;
+}
+
+.result-filter label span{
+    margin-left: 5px;
+}
+
+/* Results Table */
+.table{
+    margin-top: 30px;
+    margin-bottom: 80px;
+    width: 250px;
+    text-align: center;
+}
+
+.table td{
+    border: 1px solid grey;
+}
+
+/* Sidebar Toggler */
+.burger-icon{
+    position: fixed;
+    top: 5px;
+    font-size: 26px;
+    right: 20px;
+    z-index: 5;
+    display: none;
+    cursor: pointer;
+}
+
+.collapse-navbar{
+    right: 0;
+}
+.sidebar-content{
+    right: 0;
+}
+
+
+@media screen and (max-width:768px)
+{
+    .collapse-navbar{
+        right: -380px;
+    }
+    .burger-icon{
+        display: unset;
+    }
+}
